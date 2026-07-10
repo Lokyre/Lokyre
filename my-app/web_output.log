@@ -1,0 +1,10 @@
+
+> my-app@1.0.0 web
+> expo start --web
+
+Starting project at /app/my-app
+Starting Metro Bundler
+
+Waiting on http://localhost:8081
+
+Logs for your project will appear below.
