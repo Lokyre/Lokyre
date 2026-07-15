@@ -1,0 +1,20 @@
+
+> my-app@1.0.0 web
+> expo start --web
+
+Starting project at /app/my-app
+Starting Metro Bundler
+
+Waiting on http://localhost:8081
+
+4 packages may need updating. Run npx expo install --check for details.
+Logs for your project will appear below.
+Web Bundled 11622ms index.js (974 modules)
+Web  INFO  %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+Web  LOG  Running application "main" with appParams:
+ {"hydrate": undefined, "rootTag": "#root"}
+Development-level warnings: ON.
+Performance optimizations: OFF.
+Web  WARN  props.pointerEvents is deprecated. Use style.pointerEvents
+Web  WARN  Animated: `useNativeDriver` is not supported because the native animated module is missing. Falling back to JS-based animation. To resolve this, add `RCTAnimation` module to this app, or remove `useNativeDriver`. Make sure to run `bundle exec pod install` first. Read more about autolinking: https://github.com/react-native-community/cli/blob/master/docs/autolinking.md
+Web  WARN  "shadow*" style props are deprecated. Use "boxShadow".
