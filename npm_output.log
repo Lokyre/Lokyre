@@ -1,0 +1,157 @@
+
+> my-app@1.0.0 web
+> expo start --web
+
+Starting project at /app/my-app
+Starting Metro Bundler
+
+Waiting on http://localhost:8081
+
+Logs for your project will appear below.
+Web Bundling failed 9734ms index.js (1197 modules)
+Unable to resolve "react-native-worklets" from "node_modules/react-native-reanimated/lib/module/initializers.js"
+[0m [90m 1 |[39m [32m'use strict'[39m[33m;[39m
+ [90m 2 |[39m
+[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m { runOnUISync[33m,[39m toggleSlowAnimationsOnUIRuntime } [36mfrom[39m [32m'react-native-worklets'[39m[33m;[39m
+ [90m   |[39m                                                               [31m[1m^[22m[39m
+ [90m 4 |[39m [36mimport[39m { [33mIS_WEB[39m[33m,[39m [33mSHOULD_BE_USE_WEB[39m } [36mfrom[39m [32m"./common/index.js"[39m[33m;[39m
+ [90m 5 |[39m [36mimport[39m { initSvgCssSupport } [36mfrom[39m [32m"./css/svg/index.js"[39m[33m;[39m
+ [90m 6 |[39m [36mimport[39m { getStaticFeatureFlag } [36mfrom[39m [32m"./featureFlags/index.js"[39m[33m;[39m[0m
+
+Import stack:
+
+ node_modules/react-native-reanimated/lib/module/initializers.js
+ | import "react-native-worklets"
+
+ node_modules/react-native-reanimated/lib/module/index.js
+ | import "./initializers.js"
+
+ node_modules/react-native-gesture-handler/lib/module/handlers/gestures/reanimatedWrapper.js
+ | import "react-native-reanimated"
+
+ node_modules/react-native-gesture-handler/lib/module/handlers/gestures/GestureDetector/useAnimatedGesture.js
+ | import "../reanimatedWrapper"
+
+ node_modules/react-native-gesture-handler/lib/module/handlers/gestures/GestureDetector/index.js
+ | import "./useAnimatedGesture"
+
+ node_modules/react-native-gesture-handler/lib/module/index.js
+ | import "./handlers/gestures/GestureDetector"
+
+ App.js
+ | import "react-native-gesture-handler"
+
+ index.js
+ | import "./App"
+
+
+ | import "./index"
+
+Web Bundled 1694ms index.js (1257 modules)
+Web  INFO  %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+Web  LOG  Running application "main" with appParams:
+ {"hydrate": undefined, "rootTag": "#root"}
+Development-level warnings: ON.
+Performance optimizations: OFF.
+Web  WARN  props.pointerEvents is deprecated. Use style.pointerEvents
+Web  WARN  Animated: `useNativeDriver` is not supported because the native animated module is missing. Falling back to JS-based animation. To resolve this, add `RCTAnimation` module to this app, or remove `useNativeDriver`. Make sure to run `bundle exec pod install` first. Read more about autolinking: https://github.com/react-native-community/cli/blob/master/docs/autolinking.md
+Web  WARN  "shadow*" style props are deprecated. Use "boxShadow".
+Web  WARN  Tried to use the icon 'plus' in a component from 'react-native-paper', but none of the required icon libraries are installed. To fix this, please install one of the following:
+- @expo/vector-icons
+- @react-native-vector-icons/material-design-icons
+- react-native-vector-icons
+
+You can also use another method to specify icon: https://callstack.github.io/react-native-paper/docs/guides/icons
+Web  WARN  Tried to use the icon 'credit-card' in a component from 'react-native-paper', but none of the required icon libraries are installed. To fix this, please install one of the following:
+- @expo/vector-icons
+- @react-native-vector-icons/material-design-icons
+- react-native-vector-icons
+
+You can also use another method to specify icon: https://callstack.github.io/react-native-paper/docs/guides/icons
+Web  WARN  Tried to use the icon 'circle-outline' in a component from 'react-native-paper', but none of the required icon libraries are installed. To fix this, please install one of the following:
+- @expo/vector-icons
+- @react-native-vector-icons/material-design-icons
+- react-native-vector-icons
+
+You can also use another method to specify icon: https://callstack.github.io/react-native-paper/docs/guides/icons
+Web  WARN  Tried to use the icon 'plus' in a component from 'react-native-paper', but none of the required icon libraries are installed. To fix this, please install one of the following:
+- @expo/vector-icons
+- @react-native-vector-icons/material-design-icons
+- react-native-vector-icons
+
+You can also use another method to specify icon: https://callstack.github.io/react-native-paper/docs/guides/icons
+Web  WARN  Tried to use the icon 'credit-card' in a component from 'react-native-paper', but none of the required icon libraries are installed. To fix this, please install one of the following:
+- @expo/vector-icons
+- @react-native-vector-icons/material-design-icons
+- react-native-vector-icons
+
+You can also use another method to specify icon: https://callstack.github.io/react-native-paper/docs/guides/icons
+Web  WARN  Tried to use the icon 'circle-outline' in a component from 'react-native-paper', but none of the required icon libraries are installed. To fix this, please install one of the following:
+- @expo/vector-icons
+- @react-native-vector-icons/material-design-icons
+- react-native-vector-icons
+
+You can also use another method to specify icon: https://callstack.github.io/react-native-paper/docs/guides/icons
+Web Bundled 58ms index.js (1 module)
+Web  INFO  %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+Web  LOG  Running application "main" with appParams:
+ {"hydrate": undefined, "rootTag": "#root"}
+Development-level warnings: ON.
+Performance optimizations: OFF.
+Web  WARN  props.pointerEvents is deprecated. Use style.pointerEvents
+Web  WARN  Animated: `useNativeDriver` is not supported because the native animated module is missing. Falling back to JS-based animation. To resolve this, add `RCTAnimation` module to this app, or remove `useNativeDriver`. Make sure to run `bundle exec pod install` first. Read more about autolinking: https://github.com/react-native-community/cli/blob/master/docs/autolinking.md
+Web  WARN  "shadow*" style props are deprecated. Use "boxShadow".
+Web  WARN  Tried to use the icon 'plus' in a component from 'react-native-paper', but none of the required icon libraries are installed. To fix this, please install one of the following:
+- @expo/vector-icons
+- @react-native-vector-icons/material-design-icons
+- react-native-vector-icons
+
+You can also use another method to specify icon: https://callstack.github.io/react-native-paper/docs/guides/icons
+Web  WARN  Tried to use the icon 'credit-card' in a component from 'react-native-paper', but none of the required icon libraries are installed. To fix this, please install one of the following:
+- @expo/vector-icons
+- @react-native-vector-icons/material-design-icons
+- react-native-vector-icons
+
+You can also use another method to specify icon: https://callstack.github.io/react-native-paper/docs/guides/icons
+Web  WARN  Tried to use the icon 'circle-outline' in a component from 'react-native-paper', but none of the required icon libraries are installed. To fix this, please install one of the following:
+- @expo/vector-icons
+- @react-native-vector-icons/material-design-icons
+- react-native-vector-icons
+
+You can also use another method to specify icon: https://callstack.github.io/react-native-paper/docs/guides/icons
+Web  WARN  Tried to use the icon 'plus' in a component from 'react-native-paper', but none of the required icon libraries are installed. To fix this, please install one of the following:
+- @expo/vector-icons
+- @react-native-vector-icons/material-design-icons
+- react-native-vector-icons
+
+You can also use another method to specify icon: https://callstack.github.io/react-native-paper/docs/guides/icons
+Web  WARN  Tried to use the icon 'credit-card' in a component from 'react-native-paper', but none of the required icon libraries are installed. To fix this, please install one of the following:
+- @expo/vector-icons
+- @react-native-vector-icons/material-design-icons
+- react-native-vector-icons
+
+You can also use another method to specify icon: https://callstack.github.io/react-native-paper/docs/guides/icons
+Web  WARN  Tried to use the icon 'circle-outline' in a component from 'react-native-paper', but none of the required icon libraries are installed. To fix this, please install one of the following:
+- @expo/vector-icons
+- @react-native-vector-icons/material-design-icons
+- react-native-vector-icons
+
+You can also use another method to specify icon: https://callstack.github.io/react-native-paper/docs/guides/icons
+Web  WARN  Tried to use the icon 'credit-card' in a component from 'react-native-paper', but none of the required icon libraries are installed. To fix this, please install one of the following:
+- @expo/vector-icons
+- @react-native-vector-icons/material-design-icons
+- react-native-vector-icons
+
+You can also use another method to specify icon: https://callstack.github.io/react-native-paper/docs/guides/icons
+Web  WARN  Tried to use the icon 'check-circle' in a component from 'react-native-paper', but none of the required icon libraries are installed. To fix this, please install one of the following:
+- @expo/vector-icons
+- @react-native-vector-icons/material-design-icons
+- react-native-vector-icons
+
+You can also use another method to specify icon: https://callstack.github.io/react-native-paper/docs/guides/icons
+Web  WARN  Tried to use the icon 'plus' in a component from 'react-native-paper', but none of the required icon libraries are installed. To fix this, please install one of the following:
+- @expo/vector-icons
+- @react-native-vector-icons/material-design-icons
+- react-native-vector-icons
+
+You can also use another method to specify icon: https://callstack.github.io/react-native-paper/docs/guides/icons
