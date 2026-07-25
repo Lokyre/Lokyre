@@ -1,0 +1,30 @@
+import 'react-native-gesture-handler';
+import 'react-native-get-random-values';
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import { Provider as PaperProvider } from 'react-native-paper';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+
+import { DebtProvider } from './src/context/DebtContext';
+import HomeScreen from './src/screens/HomeScreen';
+import AddEditDebtScreen from './src/screens/AddEditDebtScreen';
+
+const Stack = createStackNavigator();
+
+export default function App() {
+  return (
+    <SafeAreaProvider>
+      <DebtProvider>
+        <PaperProvider>
+          <NavigationContainer>
+            <Stack.Navigator initialRouteName="Home" screenOptions={{ headerShown: false }}>
+              <Stack.Screen name="Home" component={HomeScreen} />
+              <Stack.Screen name="AddEditDebt" component={AddEditDebtScreen} />
+            </Stack.Navigator>
+          </NavigationContainer>
+        </PaperProvider>
+      </DebtProvider>
+    </SafeAreaProvider>
+  );
+}
