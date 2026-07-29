@@ -1,0 +1,8 @@
+npm warn exec The following package was not found and will be installed: serve@14.2.6
+ INFO  Accepting connections at http://localhost:8081
+ HTTP  7/29/2026 10:02:51 AM ::1 GET /
+ HTTP  7/29/2026 10:02:51 AM ::1 Returned 200 in 44 ms
+ HTTP  7/29/2026 10:02:51 AM ::1 GET /_expo/static/js/web/index-71c3859d9ca4defb354eb9299bece59d.js
+ HTTP  7/29/2026 10:02:51 AM ::1 Returned 200 in 12 ms
+ HTTP  7/29/2026 10:02:52 AM ::1 GET /assets/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/MaterialCommunityIcons.6e435534bd35da5fef04168860a9b8fa.ttf
+ HTTP  7/29/2026 10:02:52 AM ::1 Returned 200 in 9 ms
