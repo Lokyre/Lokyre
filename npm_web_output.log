@@ -1,0 +1,67 @@
+
+> my-app@1.0.0 web
+> expo start --web
+
+Starting project at /app/my-app
+Starting Metro Bundler
+
+Waiting on http://localhost:8081
+
+5 packages may need updating. Run npx expo install --check for details.
+Logs for your project will appear below.
+Web Bundled 10365ms index.js (996 modules)
+Web  ERROR  [Error: Incompatible React versions: The "react" and "react-dom" packages must have the exact same version. Instead got:
+  - react:      19.2.3
+  - react-dom:  19.2.8
+Learn more: https://react.dev/warnings/version-mismatch]
+
+Code: react-dom-client.development.js
+[0m [90m 27933 |[39m       [36mvar[39m isomorphicReactPackageVersion [33m=[39m [33mReact[39m[33m.[39mversion[33m;[39m
+ [90m 27934 |[39m       [36mif[39m ([32m"19.2.8"[39m [33m!==[39m isomorphicReactPackageVersion)
+[31m[1m>[22m[39m[90m 27935 |[39m         [36mthrow[39m [33mError[39m(
+ [90m       |[39m               [31m[1m^[22m[39m
+ [90m 27936 |[39m           [32m'Incompatible React versions: The "react" and "react-dom" packages must have the exact same version. Instead got:\n  - react:      '[39m [33m+[39m
+ [90m 27937 |[39m             (isomorphicReactPackageVersion [33m+[39m
+ [90m 27938 |[39m               [32m"\n  - react-dom:  19.2.8\nLearn more: https://react.dev/warnings/version-mismatch"[39m)[0m
+Call Stack
+  <anonymous> (node_modules/react-dom/cjs/react-dom-client.development.js:27935:15)
+  <anonymous> (node_modules/react-dom/cjs/react-dom-client.development.js:27940:6)
+  <global> (node_modules/react-dom/cjs/react-dom-client.development.js:28121:4)
+  <global> (node_modules/react-dom/client.js:37:20)
+Web Bundled 47ms index.js (1 module)
+Web  ERROR  [Error: Incompatible React versions: The "react" and "react-dom" packages must have the exact same version. Instead got:
+  - react:      19.2.3
+  - react-dom:  19.2.8
+Learn more: https://react.dev/warnings/version-mismatch]
+
+Code: react-dom-client.development.js
+[0m [90m 27933 |[39m       [36mvar[39m isomorphicReactPackageVersion [33m=[39m [33mReact[39m[33m.[39mversion[33m;[39m
+ [90m 27934 |[39m       [36mif[39m ([32m"19.2.8"[39m [33m!==[39m isomorphicReactPackageVersion)
+[31m[1m>[22m[39m[90m 27935 |[39m         [36mthrow[39m [33mError[39m(
+ [90m       |[39m               [31m[1m^[22m[39m
+ [90m 27936 |[39m           [32m'Incompatible React versions: The "react" and "react-dom" packages must have the exact same version. Instead got:\n  - react:      '[39m [33m+[39m
+ [90m 27937 |[39m             (isomorphicReactPackageVersion [33m+[39m
+ [90m 27938 |[39m               [32m"\n  - react-dom:  19.2.8\nLearn more: https://react.dev/warnings/version-mismatch"[39m)[0m
+Call Stack
+  <anonymous> (node_modules/react-dom/cjs/react-dom-client.development.js:27935:15)
+  <anonymous> (node_modules/react-dom/cjs/react-dom-client.development.js:27940:6)
+  <global> (node_modules/react-dom/cjs/react-dom-client.development.js:28121:4)
+  <global> (node_modules/react-dom/client.js:37:20)
+Web Bundled 3031ms index.js (1 module)
+Web  INFO  %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+Web  LOG  Running application "main" with appParams:
+ {"hydrate": undefined, "rootTag": "#root"}
+Development-level warnings: ON.
+Performance optimizations: OFF.
+Web  WARN  props.pointerEvents is deprecated. Use style.pointerEvents
+Web  WARN  Animated: `useNativeDriver` is not supported because the native animated module is missing. Falling back to JS-based animation. To resolve this, add `RCTAnimation` module to this app, or remove `useNativeDriver`. Make sure to run `bundle exec pod install` first. Read more about autolinking: https://github.com/react-native-community/cli/blob/master/docs/autolinking.md
+Web  WARN  "shadow*" style props are deprecated. Use "boxShadow".
+Web Bundled 58ms index.js (1 module)
+Web  INFO  %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+Web  LOG  Running application "main" with appParams:
+ {"hydrate": undefined, "rootTag": "#root"}
+Development-level warnings: ON.
+Performance optimizations: OFF.
+Web  WARN  props.pointerEvents is deprecated. Use style.pointerEvents
+Web  WARN  Animated: `useNativeDriver` is not supported because the native animated module is missing. Falling back to JS-based animation. To resolve this, add `RCTAnimation` module to this app, or remove `useNativeDriver`. Make sure to run `bundle exec pod install` first. Read more about autolinking: https://github.com/react-native-community/cli/blob/master/docs/autolinking.md
+Web  WARN  "shadow*" style props are deprecated. Use "boxShadow".
