@@ -1,0 +1,284 @@
+Starting project at /app
+Starting Metro Bundler
+
+Waiting on http://localhost:8081
+
+9 packages may need updating. Run npx expo install --check for details.
+Logs for your project will appear below.
+Web Bundling failed 12660ms index.js (1286 modules)
+Unable to resolve "react-native-worklets" from "node_modules/react-native-reanimated/lib/module/core.js"
+[0m [90m 2 |[39m
+ [90m 3 |[39m [36mimport[39m { controlEdgeToEdgeValues[33m,[39m isEdgeToEdge } [36mfrom[39m [32m'react-native-is-edge-to-edge'[39m[33m;[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m { createSerializable } [36mfrom[39m [32m'react-native-worklets'[39m[33m;[39m
+ [90m   |[39m                                     [31m[1m^[22m[39m
+ [90m 5 |[39m [36mimport[39m { logger } [36mfrom[39m [32m"./common/index.js"[39m[33m;[39m
+ [90m 6 |[39m [36mimport[39m { [33mReanimatedModule[39m } [36mfrom[39m [32m'./ReanimatedModule'[39m[33m;[39m
+ [90m 7 |[39m [36mimport[39m { [33mSensorContainer[39m } [36mfrom[39m [32m"./SensorContainer.js"[39m[33m;[39m[0m
+
+Import stack:
+
+ node_modules/react-native-reanimated/lib/module/core.js
+ | import "react-native-worklets"
+
+ node_modules/react-native-reanimated/lib/module/index.js
+ | import "./core.js"
+
+ node_modules/react-native-gesture-handler/lib/module/handlers/gestures/reanimatedWrapper.js
+ | import "react-native-reanimated"
+
+ node_modules/react-native-gesture-handler/lib/module/handlers/gestures/GestureDetector/useAnimatedGesture.js
+ | import "../reanimatedWrapper"
+
+ node_modules/react-native-gesture-handler/lib/module/handlers/gestures/GestureDetector/index.js
+ | import "./useAnimatedGesture"
+
+ node_modules/react-native-gesture-handler/lib/module/components/Text.js
+ | import "../handlers/gestures/GestureDetector"
+
+ node_modules/react-native-gesture-handler/lib/module/index.js
+ | import "./components/Text"
+
+ App.js
+ | import "react-native-gesture-handler"
+
+ index.js
+ | import "./App"
+
+
+ | import "./index"
+
+Web Bundled 1947ms index.js (1342 modules)
+Web  INFO  %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+Web  LOG  Running application "main" with appParams:
+ {"hydrate": undefined, "rootTag": "#root"}
+Development-level warnings: ON.
+Performance optimizations: OFF.
+Web  WARN  props.pointerEvents is deprecated. Use style.pointerEvents
+Web  WARN  "shadow*" style props are deprecated. Use "boxShadow".
+Web  WARN  Animated: `useNativeDriver` is not supported because the native animated module is missing. Falling back to JS-based animation. To resolve this, add `RCTAnimation` module to this app, or remove `useNativeDriver`. Make sure to run `bundle exec pod install` first. Read more about autolinking: https://github.com/react-native-community/cli/blob/master/docs/autolinking.md
+Web  ERROR  Unexpected text node: . A text node cannot be a child of a <View>.
+
+Code: HomeScreen.js
+[0m [90m 44 |[39m         )}
+ [90m 45 |[39m       [33m/[39m[33m>[39m
+[31m[1m>[22m[39m[90m 46 |[39m       [33m<[39m[33mCard[39m[33m.[39m[33mContent[39m[33m>[39m
+ [90m    |[39m       [31m[1m^[22m[39m
+ [90m 47 |[39m         [33m<[39m[33mView[39m style[33m=[39m{styles[33m.[39mchipContainer}[33m>[39m
+ [90m 48 |[39m           [33m<[39m[33mChip[39m icon[33m=[39m[32m"tag"[39m style[33m=[39m{styles[33m.[39mchip}[33m>[39m{getDebtTypeLabel(item[33m.[39mtype)}[33m<[39m[33m/[39m[33mChip[39m[33m>[39m
+ [90m 49 |[39m         [33m<[39m[33m/[39m[33mView[39m[33m>[39m[0m
+Call Stack
+  renderItem (src/screens/HomeScreen.js:46:7)
+  HomeScreen (src/screens/HomeScreen.js:69:9)
+  App (App.js:22:13)
+Web Bundled 62ms index.js (1 module)
+Web  INFO  %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+Web  LOG  Running application "main" with appParams:
+ {"hydrate": undefined, "rootTag": "#root"}
+Development-level warnings: ON.
+Performance optimizations: OFF.
+Web  WARN  props.pointerEvents is deprecated. Use style.pointerEvents
+Web  WARN  "shadow*" style props are deprecated. Use "boxShadow".
+Web  WARN  Animated: `useNativeDriver` is not supported because the native animated module is missing. Falling back to JS-based animation. To resolve this, add `RCTAnimation` module to this app, or remove `useNativeDriver`. Make sure to run `bundle exec pod install` first. Read more about autolinking: https://github.com/react-native-community/cli/blob/master/docs/autolinking.md
+Web  ERROR  Unexpected text node: . A text node cannot be a child of a <View>.
+
+Code: HomeScreen.js
+[0m [90m 44 |[39m         )}
+ [90m 45 |[39m       [33m/[39m[33m>[39m
+[31m[1m>[22m[39m[90m 46 |[39m       [33m<[39m[33mCard[39m[33m.[39m[33mContent[39m[33m>[39m
+ [90m    |[39m       [31m[1m^[22m[39m
+ [90m 47 |[39m         [33m<[39m[33mView[39m style[33m=[39m{styles[33m.[39mchipContainer}[33m>[39m
+ [90m 48 |[39m           [33m<[39m[33mChip[39m icon[33m=[39m[32m"tag"[39m style[33m=[39m{styles[33m.[39mchip}[33m>[39m{getDebtTypeLabel(item[33m.[39mtype)}[33m<[39m[33m/[39m[33mChip[39m[33m>[39m
+ [90m 49 |[39m         [33m<[39m[33m/[39m[33mView[39m[33m>[39m[0m
+Call Stack
+  renderItem (src/screens/HomeScreen.js:46:7)
+  HomeScreen (src/screens/HomeScreen.js:69:9)
+  App (App.js:22:13)
+Web Bundling failed 50ms index.js (1 module)
+ ERROR  SyntaxError: /app/src/screens/HomeScreen.js: Unexpected token, expected ":" (52:9)
+
+  50 |         {item.dueDate ? (
+  51 |           <Paragraph style={styles.dueDate}>Vence: {new Date(item.dueDate).toLocaleDateString()}</Paragraph>
+> 52 |         )}
+     |          ^
+  53 |       </Card.Content>
+  54 |     </Card>
+  55 |   );
+    at constructor (/app/node_modules/@babel/parser/lib/index.js:369:19)
+    at FlowParserMixin.raise (/app/node_modules/@babel/parser/lib/index.js:6620:19)
+    at FlowParserMixin.unexpected (/app/node_modules/@babel/parser/lib/index.js:6640:16)
+    at FlowParserMixin.expect (/app/node_modules/@babel/parser/lib/index.js:6920:12)
+    at FlowParserMixin.parseConditional (/app/node_modules/@babel/parser/lib/index.js:3031:10)
+    at FlowParserMixin.parseMaybeConditional (/app/node_modules/@babel/parser/lib/index.js:10906:17)
+    at FlowParserMixin.parseMaybeAssign (/app/node_modules/@babel/parser/lib/index.js:10852:21)
+    at FlowParserMixin.parseMaybeAssign (/app/node_modules/@babel/parser/lib/index.js:3565:18)
+    at FlowParserMixin.parseExpressionBase (/app/node_modules/@babel/parser/lib/index.js:10805:23)
+    at /app/node_modules/@babel/parser/lib/index.js:10801:39
+    at FlowParserMixin.allowInAnd (/app/node_modules/@babel/parser/lib/index.js:12455:12)
+    at FlowParserMixin.parseExpression (/app/node_modules/@babel/parser/lib/index.js:10801:17)
+    at FlowParserMixin.jsxParseExpressionContainer (/app/node_modules/@babel/parser/lib/index.js:4648:31)
+    at FlowParserMixin.jsxParseElementAt (/app/node_modules/@babel/parser/lib/index.js:4727:36)
+    at FlowParserMixin.jsxParseElementAt (/app/node_modules/@babel/parser/lib/index.js:4714:32)
+    at FlowParserMixin.jsxParseElement (/app/node_modules/@babel/parser/lib/index.js:4765:17)
+    at FlowParserMixin.parseExprAtom (/app/node_modules/@babel/parser/lib/index.js:4775:19)
+    at FlowParserMixin.parseExprSubscripts (/app/node_modules/@babel/parser/lib/index.js:11102:23)
+    at FlowParserMixin.parseUpdate (/app/node_modules/@babel/parser/lib/index.js:11087:21)
+    at FlowParserMixin.parseMaybeUnary (/app/node_modules/@babel/parser/lib/index.js:11067:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/app/node_modules/@babel/parser/lib/index.js:10920:61)
+    at FlowParserMixin.parseExprOps (/app/node_modules/@babel/parser/lib/index.js:10925:23)
+    at FlowParserMixin.parseMaybeConditional (/app/node_modules/@babel/parser/lib/index.js:10902:23)
+    at FlowParserMixin.parseMaybeAssign (/app/node_modules/@babel/parser/lib/index.js:10852:21)
+    at /app/node_modules/@babel/parser/lib/index.js:3514:39
+    at FlowParserMixin.tryParse (/app/node_modules/@babel/parser/lib/index.js:6928:20)
+    at FlowParserMixin.parseMaybeAssign (/app/node_modules/@babel/parser/lib/index.js:3514:18)
+    at /app/node_modules/@babel/parser/lib/index.js:10821:39
+    at FlowParserMixin.allowInAnd (/app/node_modules/@babel/parser/lib/index.js:12455:12)
+    at FlowParserMixin.parseMaybeAssignAllowIn (/app/node_modules/@babel/parser/lib/index.js:10821:17)
+    at FlowParserMixin.parseMaybeAssignAllowInOrVoidPattern (/app/node_modules/@babel/parser/lib/index.js:12522:17)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/app/node_modules/@babel/parser/lib/index.js:11701:28)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/app/node_modules/@babel/parser/lib/index.js:3607:18)
+    at FlowParserMixin.parseExprAtom (/app/node_modules/@babel/parser/lib/index.js:11357:23)
+    at FlowParserMixin.parseExprAtom (/app/node_modules/@babel/parser/lib/index.js:4780:20)
+    at FlowParserMixin.parseExprSubscripts (/app/node_modules/@babel/parser/lib/index.js:11102:23)
+    at FlowParserMixin.parseUpdate (/app/node_modules/@babel/parser/lib/index.js:11087:21)
+    at FlowParserMixin.parseMaybeUnary (/app/node_modules/@babel/parser/lib/index.js:11067:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/app/node_modules/@babel/parser/lib/index.js:10920:61)
+    at FlowParserMixin.parseExprOps (/app/node_modules/@babel/parser/lib/index.js:10925:23)
+    at FlowParserMixin.parseMaybeConditional (/app/node_modules/@babel/parser/lib/index.js:10902:23)
+    at FlowParserMixin.parseMaybeAssign (/app/node_modules/@babel/parser/lib/index.js:10852:21)
+    at FlowParserMixin.parseMaybeAssign (/app/node_modules/@babel/parser/lib/index.js:3565:18)
+    at FlowParserMixin.parseFunctionBody (/app/node_modules/@babel/parser/lib/index.js:12122:24)
+    at /app/node_modules/@babel/parser/lib/index.js:2908:63
+    at FlowParserMixin.forwardNoArrowParamsConversionAt (/app/node_modules/@babel/parser/lib/index.js:3084:16)
+    at FlowParserMixin.parseFunctionBody (/app/node_modules/@babel/parser/lib/index.js:2908:12)
+    at FlowParserMixin.parseArrowExpression (/app/node_modules/@babel/parser/lib/index.js:12104:10)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/app/node_modules/@babel/parser/lib/index.js:11713:12)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/app/node_modules/@babel/parser/lib/index.js:3607:18)
+Web Bundling failed 92ms index.js (1 module)
+ ERROR  SyntaxError: /app/src/screens/HomeScreen.js: Unexpected token, expected ":" (52:9)
+
+  50 |         {item.dueDate ? (
+  51 |           <Paragraph style={styles.dueDate}>Vence: {new Date(item.dueDate).toLocaleDateString()}</Paragraph>
+> 52 |         )}
+     |          ^
+  53 |       </Card.Content>
+  54 |     </Card>
+  55 |   );
+    at constructor (/app/node_modules/@babel/parser/lib/index.js:369:19)
+    at FlowParserMixin.raise (/app/node_modules/@babel/parser/lib/index.js:6620:19)
+    at FlowParserMixin.unexpected (/app/node_modules/@babel/parser/lib/index.js:6640:16)
+    at FlowParserMixin.expect (/app/node_modules/@babel/parser/lib/index.js:6920:12)
+    at FlowParserMixin.parseConditional (/app/node_modules/@babel/parser/lib/index.js:3031:10)
+    at FlowParserMixin.parseMaybeConditional (/app/node_modules/@babel/parser/lib/index.js:10906:17)
+    at FlowParserMixin.parseMaybeAssign (/app/node_modules/@babel/parser/lib/index.js:10852:21)
+    at FlowParserMixin.parseMaybeAssign (/app/node_modules/@babel/parser/lib/index.js:3565:18)
+    at FlowParserMixin.parseExpressionBase (/app/node_modules/@babel/parser/lib/index.js:10805:23)
+    at /app/node_modules/@babel/parser/lib/index.js:10801:39
+    at FlowParserMixin.allowInAnd (/app/node_modules/@babel/parser/lib/index.js:12455:12)
+    at FlowParserMixin.parseExpression (/app/node_modules/@babel/parser/lib/index.js:10801:17)
+    at FlowParserMixin.jsxParseExpressionContainer (/app/node_modules/@babel/parser/lib/index.js:4648:31)
+    at FlowParserMixin.jsxParseElementAt (/app/node_modules/@babel/parser/lib/index.js:4727:36)
+    at FlowParserMixin.jsxParseElementAt (/app/node_modules/@babel/parser/lib/index.js:4714:32)
+    at FlowParserMixin.jsxParseElement (/app/node_modules/@babel/parser/lib/index.js:4765:17)
+    at FlowParserMixin.parseExprAtom (/app/node_modules/@babel/parser/lib/index.js:4775:19)
+    at FlowParserMixin.parseExprSubscripts (/app/node_modules/@babel/parser/lib/index.js:11102:23)
+    at FlowParserMixin.parseUpdate (/app/node_modules/@babel/parser/lib/index.js:11087:21)
+    at FlowParserMixin.parseMaybeUnary (/app/node_modules/@babel/parser/lib/index.js:11067:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/app/node_modules/@babel/parser/lib/index.js:10920:61)
+    at FlowParserMixin.parseExprOps (/app/node_modules/@babel/parser/lib/index.js:10925:23)
+    at FlowParserMixin.parseMaybeConditional (/app/node_modules/@babel/parser/lib/index.js:10902:23)
+    at FlowParserMixin.parseMaybeAssign (/app/node_modules/@babel/parser/lib/index.js:10852:21)
+    at /app/node_modules/@babel/parser/lib/index.js:3514:39
+    at FlowParserMixin.tryParse (/app/node_modules/@babel/parser/lib/index.js:6928:20)
+    at FlowParserMixin.parseMaybeAssign (/app/node_modules/@babel/parser/lib/index.js:3514:18)
+    at /app/node_modules/@babel/parser/lib/index.js:10821:39
+    at FlowParserMixin.allowInAnd (/app/node_modules/@babel/parser/lib/index.js:12455:12)
+    at FlowParserMixin.parseMaybeAssignAllowIn (/app/node_modules/@babel/parser/lib/index.js:10821:17)
+    at FlowParserMixin.parseMaybeAssignAllowInOrVoidPattern (/app/node_modules/@babel/parser/lib/index.js:12522:17)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/app/node_modules/@babel/parser/lib/index.js:11701:28)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/app/node_modules/@babel/parser/lib/index.js:3607:18)
+    at FlowParserMixin.parseExprAtom (/app/node_modules/@babel/parser/lib/index.js:11357:23)
+    at FlowParserMixin.parseExprAtom (/app/node_modules/@babel/parser/lib/index.js:4780:20)
+    at FlowParserMixin.parseExprSubscripts (/app/node_modules/@babel/parser/lib/index.js:11102:23)
+    at FlowParserMixin.parseUpdate (/app/node_modules/@babel/parser/lib/index.js:11087:21)
+    at FlowParserMixin.parseMaybeUnary (/app/node_modules/@babel/parser/lib/index.js:11067:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/app/node_modules/@babel/parser/lib/index.js:10920:61)
+    at FlowParserMixin.parseExprOps (/app/node_modules/@babel/parser/lib/index.js:10925:23)
+    at FlowParserMixin.parseMaybeConditional (/app/node_modules/@babel/parser/lib/index.js:10902:23)
+    at FlowParserMixin.parseMaybeAssign (/app/node_modules/@babel/parser/lib/index.js:10852:21)
+    at FlowParserMixin.parseMaybeAssign (/app/node_modules/@babel/parser/lib/index.js:3565:18)
+    at FlowParserMixin.parseFunctionBody (/app/node_modules/@babel/parser/lib/index.js:12122:24)
+    at /app/node_modules/@babel/parser/lib/index.js:2908:63
+    at FlowParserMixin.forwardNoArrowParamsConversionAt (/app/node_modules/@babel/parser/lib/index.js:3084:16)
+    at FlowParserMixin.parseFunctionBody (/app/node_modules/@babel/parser/lib/index.js:2908:12)
+    at FlowParserMixin.parseArrowExpression (/app/node_modules/@babel/parser/lib/index.js:12104:10)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/app/node_modules/@babel/parser/lib/index.js:11713:12)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/app/node_modules/@babel/parser/lib/index.js:3607:18)
+Web Bundling failed 24ms index.js (1 module)
+ ERROR  SyntaxError: /app/src/screens/HomeScreen.js: Unexpected token, expected ":" (52:9)
+
+  50 |         {item.dueDate ? (
+  51 |           <Paragraph style={styles.dueDate}>Vence: {new Date(item.dueDate).toLocaleDateString()}</Paragraph>
+> 52 |         )}
+     |          ^
+  53 |       </Card.Content>
+  54 |     </Card>
+  55 |   );
+    at constructor (/app/node_modules/@babel/parser/lib/index.js:369:19)
+    at FlowParserMixin.raise (/app/node_modules/@babel/parser/lib/index.js:6620:19)
+    at FlowParserMixin.unexpected (/app/node_modules/@babel/parser/lib/index.js:6640:16)
+    at FlowParserMixin.expect (/app/node_modules/@babel/parser/lib/index.js:6920:12)
+    at FlowParserMixin.parseConditional (/app/node_modules/@babel/parser/lib/index.js:3031:10)
+    at FlowParserMixin.parseMaybeConditional (/app/node_modules/@babel/parser/lib/index.js:10906:17)
+    at FlowParserMixin.parseMaybeAssign (/app/node_modules/@babel/parser/lib/index.js:10852:21)
+    at FlowParserMixin.parseMaybeAssign (/app/node_modules/@babel/parser/lib/index.js:3565:18)
+    at FlowParserMixin.parseExpressionBase (/app/node_modules/@babel/parser/lib/index.js:10805:23)
+    at /app/node_modules/@babel/parser/lib/index.js:10801:39
+    at FlowParserMixin.allowInAnd (/app/node_modules/@babel/parser/lib/index.js:12455:12)
+    at FlowParserMixin.parseExpression (/app/node_modules/@babel/parser/lib/index.js:10801:17)
+    at FlowParserMixin.jsxParseExpressionContainer (/app/node_modules/@babel/parser/lib/index.js:4648:31)
+    at FlowParserMixin.jsxParseElementAt (/app/node_modules/@babel/parser/lib/index.js:4727:36)
+    at FlowParserMixin.jsxParseElementAt (/app/node_modules/@babel/parser/lib/index.js:4714:32)
+    at FlowParserMixin.jsxParseElement (/app/node_modules/@babel/parser/lib/index.js:4765:17)
+    at FlowParserMixin.parseExprAtom (/app/node_modules/@babel/parser/lib/index.js:4775:19)
+    at FlowParserMixin.parseExprSubscripts (/app/node_modules/@babel/parser/lib/index.js:11102:23)
+    at FlowParserMixin.parseUpdate (/app/node_modules/@babel/parser/lib/index.js:11087:21)
+    at FlowParserMixin.parseMaybeUnary (/app/node_modules/@babel/parser/lib/index.js:11067:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/app/node_modules/@babel/parser/lib/index.js:10920:61)
+    at FlowParserMixin.parseExprOps (/app/node_modules/@babel/parser/lib/index.js:10925:23)
+    at FlowParserMixin.parseMaybeConditional (/app/node_modules/@babel/parser/lib/index.js:10902:23)
+    at FlowParserMixin.parseMaybeAssign (/app/node_modules/@babel/parser/lib/index.js:10852:21)
+    at /app/node_modules/@babel/parser/lib/index.js:3514:39
+    at FlowParserMixin.tryParse (/app/node_modules/@babel/parser/lib/index.js:6928:20)
+    at FlowParserMixin.parseMaybeAssign (/app/node_modules/@babel/parser/lib/index.js:3514:18)
+    at /app/node_modules/@babel/parser/lib/index.js:10821:39
+    at FlowParserMixin.allowInAnd (/app/node_modules/@babel/parser/lib/index.js:12455:12)
+    at FlowParserMixin.parseMaybeAssignAllowIn (/app/node_modules/@babel/parser/lib/index.js:10821:17)
+    at FlowParserMixin.parseMaybeAssignAllowInOrVoidPattern (/app/node_modules/@babel/parser/lib/index.js:12522:17)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/app/node_modules/@babel/parser/lib/index.js:11701:28)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/app/node_modules/@babel/parser/lib/index.js:3607:18)
+    at FlowParserMixin.parseExprAtom (/app/node_modules/@babel/parser/lib/index.js:11357:23)
+    at FlowParserMixin.parseExprAtom (/app/node_modules/@babel/parser/lib/index.js:4780:20)
+    at FlowParserMixin.parseExprSubscripts (/app/node_modules/@babel/parser/lib/index.js:11102:23)
+    at FlowParserMixin.parseUpdate (/app/node_modules/@babel/parser/lib/index.js:11087:21)
+    at FlowParserMixin.parseMaybeUnary (/app/node_modules/@babel/parser/lib/index.js:11067:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/app/node_modules/@babel/parser/lib/index.js:10920:61)
+    at FlowParserMixin.parseExprOps (/app/node_modules/@babel/parser/lib/index.js:10925:23)
+    at FlowParserMixin.parseMaybeConditional (/app/node_modules/@babel/parser/lib/index.js:10902:23)
+    at FlowParserMixin.parseMaybeAssign (/app/node_modules/@babel/parser/lib/index.js:10852:21)
+    at FlowParserMixin.parseMaybeAssign (/app/node_modules/@babel/parser/lib/index.js:3565:18)
+    at FlowParserMixin.parseFunctionBody (/app/node_modules/@babel/parser/lib/index.js:12122:24)
+    at /app/node_modules/@babel/parser/lib/index.js:2908:63
+    at FlowParserMixin.forwardNoArrowParamsConversionAt (/app/node_modules/@babel/parser/lib/index.js:3084:16)
+    at FlowParserMixin.parseFunctionBody (/app/node_modules/@babel/parser/lib/index.js:2908:12)
+    at FlowParserMixin.parseArrowExpression (/app/node_modules/@babel/parser/lib/index.js:12104:10)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/app/node_modules/@babel/parser/lib/index.js:11713:12)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/app/node_modules/@babel/parser/lib/index.js:3607:18)
+Web Bundled 131ms index.js (1 module)
+Web  INFO  %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+Web  LOG  Running application "main" with appParams:
+ {"hydrate": undefined, "rootTag": "#root"}
+Development-level warnings: ON.
+Performance optimizations: OFF.
+Web  WARN  props.pointerEvents is deprecated. Use style.pointerEvents
+Web  WARN  "shadow*" style props are deprecated. Use "boxShadow".
+Web  WARN  Animated: `useNativeDriver` is not supported because the native animated module is missing. Falling back to JS-based animation. To resolve this, add `RCTAnimation` module to this app, or remove `useNativeDriver`. Make sure to run `bundle exec pod install` first. Read more about autolinking: https://github.com/react-native-community/cli/blob/master/docs/autolinking.md
