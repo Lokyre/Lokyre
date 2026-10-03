@@ -1,0 +1,840 @@
+
+> app@1.0.0 test
+> jest
+
+PASS ./DebtContext.test.js
+PASS ./HomeScreen.test.js
+  ● Console
+
+    console.warn
+      Tried to use the icon 'credit-card' in a component from 'react-native-paper', but none of the required icon libraries are installed. To fix this, please install one of the following:
+      - @expo/vector-icons
+      - @react-native-vector-icons/material-design-icons
+      - react-native-vector-icons
+
+      You can also use another method to specify icon: https://callstack.github.io/react-native-paper/docs/guides/icons
+
+      10 |
+      11 | const renderWithContext = (component, debts = []) => {
+    > 12 |   return render(
+         |                ^
+      13 |     <DebtContext.Provider value={{ debts }}>
+      14 |       <NavigationContainer>
+      15 |         {component}
+
+      at warn (node_modules/react-native-paper/src/components/MaterialCommunityIcon.tsx:73:11)
+      at Object.react_stack_bottom_frame (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:15670:20)
+      at renderWithHooks (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:4863:22)
+      at updateFunctionComponent (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:7018:19)
+      at beginWork (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:8499:18)
+      at runWithFiberInDEV (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:2315:13)
+      at performUnitOfWork (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:13224:22)
+      at workLoopSync (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:13068:41)
+      at renderRootSync (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:13049:11)
+      at performWorkOnRoot (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:12181:11)
+      at performWorkOnRootViaSchedulerTask (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:2908:7)
+      at flushActQueue (node_modules/react/cjs/react.development.js:590:34)
+      at process.env.NODE_ENV.exports.act (node_modules/react/cjs/react.development.js:884:10)
+      at actImplementation (node_modules/@testing-library/react-native/src/act.ts:30:25)
+      at renderWithAct (node_modules/@testing-library/react-native/src/render-act.ts:12:11)
+      at renderInternal (node_modules/@testing-library/react-native/src/render.tsx:59:33)
+      at renderInternal (node_modules/@testing-library/react-native/src/render.tsx:29:10)
+      at renderWithContext (HomeScreen.test.js:12:16)
+      at Object.renderWithContext (HomeScreen.test.js:33:27)
+
+    console.warn
+      Tried to use the icon 'bank' in a component from 'react-native-paper', but none of the required icon libraries are installed. To fix this, please install one of the following:
+      - @expo/vector-icons
+      - @react-native-vector-icons/material-design-icons
+      - react-native-vector-icons
+
+      You can also use another method to specify icon: https://callstack.github.io/react-native-paper/docs/guides/icons
+
+      10 |
+      11 | const renderWithContext = (component, debts = []) => {
+    > 12 |   return render(
+         |                ^
+      13 |     <DebtContext.Provider value={{ debts }}>
+      14 |       <NavigationContainer>
+      15 |         {component}
+
+      at warn (node_modules/react-native-paper/src/components/MaterialCommunityIcon.tsx:73:11)
+      at Object.react_stack_bottom_frame (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:15670:20)
+      at renderWithHooks (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:4863:22)
+      at updateFunctionComponent (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:7018:19)
+      at beginWork (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:8499:18)
+      at runWithFiberInDEV (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:2315:13)
+      at performUnitOfWork (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:13224:22)
+      at workLoopSync (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:13068:41)
+      at renderRootSync (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:13049:11)
+      at performWorkOnRoot (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:12181:11)
+      at performWorkOnRootViaSchedulerTask (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:2908:7)
+      at flushActQueue (node_modules/react/cjs/react.development.js:590:34)
+      at process.env.NODE_ENV.exports.act (node_modules/react/cjs/react.development.js:884:10)
+      at actImplementation (node_modules/@testing-library/react-native/src/act.ts:30:25)
+      at renderWithAct (node_modules/@testing-library/react-native/src/render-act.ts:12:11)
+      at renderInternal (node_modules/@testing-library/react-native/src/render.tsx:59:33)
+      at renderInternal (node_modules/@testing-library/react-native/src/render.tsx:29:10)
+      at renderWithContext (HomeScreen.test.js:12:16)
+      at Object.renderWithContext (HomeScreen.test.js:33:27)
+
+FAIL ./AddEditDebtScreen.test.js
+  ● AddEditDebtScreen › validates NaN amount on save
+
+    Unable to find an element with accessibility label: Nombre (Deudor/Acreedor)
+
+    [36m<View>[39m
+      [36m<View[39m
+        [33mtestID[39m=[32m"appbar-header-root-layer"[39m
+      [36m>[39m
+        [36m<View[39m
+          [33mtestID[39m=[32m"appbar-header-outer-layer"[39m
+        [36m>[39m
+          [36m<View[39m
+            [33mtestID[39m=[32m"appbar-header"[39m
+          [36m>[39m
+            [36m<View[39m
+              [33mtestID[39m=[32m"icon-button-container-outer-layer"[39m
+            [36m>[39m
+              [36m<View[39m
+                [33mtestID[39m=[32m"icon-button-container"[39m
+              [36m>[39m
+                [36m<View[39m
+                  [33maccessibilityLabel[39m=[32m"Back"[39m
+                  [33maccessibilityRole[39m=[32m"button"[39m
+                  [33maccessibilityState[39m=[32m{
+                    {
+                      "disabled": false,
+                    }
+                  }[39m
+                  [33maccessible[39m=[32m{true}[39m
+                  [33mtestID[39m=[32m"icon-button"[39m
+                [36m>[39m
+                  [36m<View>[39m
+                    [36m<View[39m
+                      [33mtestID[39m=[32m"cross-fade-icon-current"[39m
+                    [36m>[39m
+                      [36m<View>[39m
+                        [36m<Image />[39m
+                      [36m</View>[39m
+                    [36m</View>[39m
+                  [36m</View>[39m
+                [36m</View>[39m
+              [36m</View>[39m
+            [36m</View>[39m
+            [36m<View[39m
+              [33mtestID[39m=[32m"appbar-content"[39m
+            [36m>[39m
+              [36m<Text[39m
+                [33maccessibilityRole[39m=[32m"header"[39m
+                [33maccessible[39m=[32m{true}[39m
+                [33mtestID[39m=[32m"appbar-content-title-text"[39m
+              [36m>[39m
+                [0mNueva Deuda[0m
+              [36m</Text>[39m
+            [36m</View>[39m
+            [36m<View />[39m
+          [36m</View>[39m
+        [36m</View>[39m
+      [36m</View>[39m
+      [36m<RCTScrollView>[39m
+        [36m<View>[39m
+          [36m<View>[39m
+            [36m<View[39m
+              [33mtestID[39m=[32m"text-input-outline"[39m
+            [36m/>[39m
+            [36m<View>[39m
+              [36m<View>[39m
+                [36m<View>[39m
+                  [36m<View>[39m
+                    [36m<Text[39m
+                      [33mtestID[39m=[32m"text-input-outlined-label-background"[39m
+                    [36m/>[39m
+                    [36m<Text[39m
+                      [33mstyle[39m=[32m{
+                        {
+                          "opacity": 0,
+                        }
+                      }[39m
+                      [33mtestID[39m=[32m"text-input-outlined-label-active"[39m
+                    [36m>[39m
+                      [0mNombre (Deudor/Acreedor)[0m
+                    [36m</Text>[39m
+                    [36m<Text[39m
+                      [33mstyle[39m=[32m{
+                        {
+                          "opacity": 0,
+                        }
+                      }[39m
+                      [33mtestID[39m=[32m"text-input-outlined-label-inactive"[39m
+                    [36m>[39m
+                      [0mNombre (Deudor/Acreedor)[0m
+                    [36m</Text>[39m
+                  [36m</View>[39m
+                [36m</View>[39m
+              [36m</View>[39m
+              [36m<TextInput[39m
+                [33mtestID[39m=[32m"text-input-outlined"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</View>[39m
+          [36m</View>[39m
+          [36m<View>[39m
+            [36m<View[39m
+              [33mtestID[39m=[32m"text-input-outline"[39m
+            [36m/>[39m
+            [36m<View>[39m
+              [36m<View>[39m
+                [36m<View>[39m
+                  [36m<View>[39m
+                    [36m<Text[39m
+                      [33mtestID[39m=[32m"text-input-outlined-label-background"[39m
+                    [36m/>[39m
+                    [36m<Text[39m
+                      [33mstyle[39m=[32m{
+                        {
+                          "opacity": 0,
+                        }
+                      }[39m
+                      [33mtestID[39m=[32m"text-input-outlined-label-active"[39m
+                    [36m>[39m
+                      [0mMonto[0m
+                    [36m</Text>[39m
+                    [36m<Text[39m
+                      [33mstyle[39m=[32m{
+                        {
+                          "opacity": 0,
+                        }
+                      }[39m
+                      [33mtestID[39m=[32m"text-input-outlined-label-inactive"[39m
+                    [36m>[39m
+                      [0mMonto[0m
+                    [36m</Text>[39m
+                  [36m</View>[39m
+                [36m</View>[39m
+              [36m</View>[39m
+              [36m<TextInput[39m
+                [33mtestID[39m=[32m"text-input-outlined"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</View>[39m
+          [36m</View>[39m
+          [36m<Text>[39m
+            [0mTipo de Deuda[0m
+          [36m</Text>[39m
+          [36m<View[39m
+            [33maccessible[39m=[32m{true}[39m
+            [33mtestID[39m=[32m"radio-tarjetas"[39m
+          [36m>[39m
+            [36m<Text>[39m
+              [0mTarjetas[0m
+            [36m</Text>[39m
+            [36m<Text>[39m
+              [0mchecked[0m
+            [36m</Text>[39m
+          [36m</View>[39m
+          [36m<View[39m
+            [33maccessible[39m=[32m{true}[39m
+            [33mtestID[39m=[32m"radio-creditos"[39m
+          [36m>[39m
+            [36m<Text>[39m
+              [0mCréditos[0m
+            [36m</Text>[39m
+            [36m<Text>[39m
+              [0munchecked[0m
+            [36m</Text>[39m
+          [36m</View>[39m
+          [36m<View[39m
+            [33maccessible[39m=[32m{true}[39m
+            [33mtestID[39m=[32m"radio-personas"[39m
+          [36m>[39m
+            [36m<Text>[39m
+              [0mPersonas[0m
+            [36m</Text>[39m
+            [36m<Text>[39m
+              [0munchecked[0m
+            [36m</Text>[39m
+          [36m</View>[39m
+          [36m<View[39m
+            [33maccessible[39m=[32m{true}[39m
+            [33mtestID[39m=[32m"radio-individuales"[39m
+          [36m>[39m
+            [36m<Text>[39m
+              [0mIndividuales[0m
+            [36m</Text>[39m
+            [36m<Text>[39m
+              [0munchecked[0m
+            [36m</Text>[39m
+          [36m</View>[39m
+          [36m<View>[39m
+            [36m<View[39m
+              [33mtestID[39m=[32m"text-input-outline"[39m
+            [36m/>[39m
+            [36m<View>[39m
+              [36m<View>[39m
+                [36m<View>[39m
+                  [36m<View>[39m
+                    [36m<Text[39m
+                      [33mtestID[39m=[32m"text-input-outlined-label-background"[39m
+                    [36m/>[39m
+                    [36m<Text[39m
+                      [33mstyle[39m=[32m{
+                        {
+                          "opacity": 0,
+                        }
+                      }[39m
+                      [33mtestID[39m=[32m"text-input-outlined-label-active"[39m
+                    [36m>[39m
+                      [0mDescripción (opcional)[0m
+                    [36m</Text>[39m
+                    [36m<Text[39m
+                      [33mstyle[39m=[32m{
+                        {
+                          "opacity": 0,
+                        }
+                      }[39m
+                      [33mtestID[39m=[32m"text-input-outlined-label-inactive"[39m
+                    [36m>[39m
+                      [0mDescripción (opcional)[0m
+                    [36m</Text>[39m
+                  [36m</View>[39m
+                [36m</View>[39m
+              [36m</View>[39m
+              [36m<TextInput[39m
+                [33mtestID[39m=[32m"text-input-outlined"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</View>[39m
+          [36m</View>[39m
+          [36m<View[39m
+            [33mtestID[39m=[32m"button-container-outer-layer"[39m
+          [36m>[39m
+            [36m<View[39m
+              [33mtestID[39m=[32m"button-container"[39m
+            [36m>[39m
+              [36m<View[39m
+                [33maccessibilityRole[39m=[32m"button"[39m
+                [33maccessibilityState[39m=[32m{
+                  {
+                    "disabled": false,
+                  }
+                }[39m
+                [33maccessible[39m=[32m{true}[39m
+                [33mtestID[39m=[32m"button"[39m
+              [36m>[39m
+                [36m<View>[39m
+                  [36m<Text[39m
+                    [33mtestID[39m=[32m"button-text"[39m
+                  [36m>[39m
+                    [0mGuardar[0m
+                  [36m</Text>[39m
+                [36m</View>[39m
+              [36m</View>[39m
+            [36m</View>[39m
+          [36m</View>[39m
+        [36m</View>[39m
+      [36m</RCTScrollView>[39m
+    [36m</View>[39m
+
+      37 |
+      38 |     // Fill only name and an invalid amount
+    > 39 |     fireEvent.changeText(getByLabelText('Nombre (Deudor/Acreedor)'), 'Test Name');
+         |                          ^
+      40 |     fireEvent.changeText(getByLabelText('Monto'), 'abc');
+      41 |
+      42 |     fireEvent.press(getByText('Guardar'));
+
+      at Object.getByLabelText (AddEditDebtScreen.test.js:39:26)
+
+  ● AddEditDebtScreen › adds a new debt successfully
+
+    Unable to find an element with accessibility label: Nombre (Deudor/Acreedor)
+
+    [36m<View>[39m
+      [36m<View[39m
+        [33mtestID[39m=[32m"appbar-header-root-layer"[39m
+      [36m>[39m
+        [36m<View[39m
+          [33mtestID[39m=[32m"appbar-header-outer-layer"[39m
+        [36m>[39m
+          [36m<View[39m
+            [33mtestID[39m=[32m"appbar-header"[39m
+          [36m>[39m
+            [36m<View[39m
+              [33mtestID[39m=[32m"icon-button-container-outer-layer"[39m
+            [36m>[39m
+              [36m<View[39m
+                [33mtestID[39m=[32m"icon-button-container"[39m
+              [36m>[39m
+                [36m<View[39m
+                  [33maccessibilityLabel[39m=[32m"Back"[39m
+                  [33maccessibilityRole[39m=[32m"button"[39m
+                  [33maccessibilityState[39m=[32m{
+                    {
+                      "disabled": false,
+                    }
+                  }[39m
+                  [33maccessible[39m=[32m{true}[39m
+                  [33mtestID[39m=[32m"icon-button"[39m
+                [36m>[39m
+                  [36m<View>[39m
+                    [36m<View[39m
+                      [33mtestID[39m=[32m"cross-fade-icon-current"[39m
+                    [36m>[39m
+                      [36m<View>[39m
+                        [36m<Image />[39m
+                      [36m</View>[39m
+                    [36m</View>[39m
+                  [36m</View>[39m
+                [36m</View>[39m
+              [36m</View>[39m
+            [36m</View>[39m
+            [36m<View[39m
+              [33mtestID[39m=[32m"appbar-content"[39m
+            [36m>[39m
+              [36m<Text[39m
+                [33maccessibilityRole[39m=[32m"header"[39m
+                [33maccessible[39m=[32m{true}[39m
+                [33mtestID[39m=[32m"appbar-content-title-text"[39m
+              [36m>[39m
+                [0mNueva Deuda[0m
+              [36m</Text>[39m
+            [36m</View>[39m
+            [36m<View />[39m
+          [36m</View>[39m
+        [36m</View>[39m
+      [36m</View>[39m
+      [36m<RCTScrollView>[39m
+        [36m<View>[39m
+          [36m<View>[39m
+            [36m<View[39m
+              [33mtestID[39m=[32m"text-input-outline"[39m
+            [36m/>[39m
+            [36m<View>[39m
+              [36m<View>[39m
+                [36m<View>[39m
+                  [36m<View>[39m
+                    [36m<Text[39m
+                      [33mtestID[39m=[32m"text-input-outlined-label-background"[39m
+                    [36m/>[39m
+                    [36m<Text[39m
+                      [33mstyle[39m=[32m{
+                        {
+                          "opacity": 0,
+                        }
+                      }[39m
+                      [33mtestID[39m=[32m"text-input-outlined-label-active"[39m
+                    [36m>[39m
+                      [0mNombre (Deudor/Acreedor)[0m
+                    [36m</Text>[39m
+                    [36m<Text[39m
+                      [33mstyle[39m=[32m{
+                        {
+                          "opacity": 0,
+                        }
+                      }[39m
+                      [33mtestID[39m=[32m"text-input-outlined-label-inactive"[39m
+                    [36m>[39m
+                      [0mNombre (Deudor/Acreedor)[0m
+                    [36m</Text>[39m
+                  [36m</View>[39m
+                [36m</View>[39m
+              [36m</View>[39m
+              [36m<TextInput[39m
+                [33mtestID[39m=[32m"text-input-outlined"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</View>[39m
+          [36m</View>[39m
+          [36m<View>[39m
+            [36m<View[39m
+              [33mtestID[39m=[32m"text-input-outline"[39m
+            [36m/>[39m
+            [36m<View>[39m
+              [36m<View>[39m
+                [36m<View>[39m
+                  [36m<View>[39m
+                    [36m<Text[39m
+                      [33mtestID[39m=[32m"text-input-outlined-label-background"[39m
+                    [36m/>[39m
+                    [36m<Text[39m
+                      [33mstyle[39m=[32m{
+                        {
+                          "opacity": 0,
+                        }
+                      }[39m
+                      [33mtestID[39m=[32m"text-input-outlined-label-active"[39m
+                    [36m>[39m
+                      [0mMonto[0m
+                    [36m</Text>[39m
+                    [36m<Text[39m
+                      [33mstyle[39m=[32m{
+                        {
+                          "opacity": 0,
+                        }
+                      }[39m
+                      [33mtestID[39m=[32m"text-input-outlined-label-inactive"[39m
+                    [36m>[39m
+                      [0mMonto[0m
+                    [36m</Text>[39m
+                  [36m</View>[39m
+                [36m</View>[39m
+              [36m</View>[39m
+              [36m<TextInput[39m
+                [33mtestID[39m=[32m"text-input-outlined"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</View>[39m
+          [36m</View>[39m
+          [36m<Text>[39m
+            [0mTipo de Deuda[0m
+          [36m</Text>[39m
+          [36m<View[39m
+            [33maccessible[39m=[32m{true}[39m
+            [33mtestID[39m=[32m"radio-tarjetas"[39m
+          [36m>[39m
+            [36m<Text>[39m
+              [0mTarjetas[0m
+            [36m</Text>[39m
+            [36m<Text>[39m
+              [0mchecked[0m
+            [36m</Text>[39m
+          [36m</View>[39m
+          [36m<View[39m
+            [33maccessible[39m=[32m{true}[39m
+            [33mtestID[39m=[32m"radio-creditos"[39m
+          [36m>[39m
+            [36m<Text>[39m
+              [0mCréditos[0m
+            [36m</Text>[39m
+            [36m<Text>[39m
+              [0munchecked[0m
+            [36m</Text>[39m
+          [36m</View>[39m
+          [36m<View[39m
+            [33maccessible[39m=[32m{true}[39m
+            [33mtestID[39m=[32m"radio-personas"[39m
+          [36m>[39m
+            [36m<Text>[39m
+              [0mPersonas[0m
+            [36m</Text>[39m
+            [36m<Text>[39m
+              [0munchecked[0m
+            [36m</Text>[39m
+          [36m</View>[39m
+          [36m<View[39m
+            [33maccessible[39m=[32m{true}[39m
+            [33mtestID[39m=[32m"radio-individuales"[39m
+          [36m>[39m
+            [36m<Text>[39m
+              [0mIndividuales[0m
+            [36m</Text>[39m
+            [36m<Text>[39m
+              [0munchecked[0m
+            [36m</Text>[39m
+          [36m</View>[39m
+          [36m<View>[39m
+            [36m<View[39m
+              [33mtestID[39m=[32m"text-input-outline"[39m
+            [36m/>[39m
+            [36m<View>[39m
+              [36m<View>[39m
+                [36m<View>[39m
+                  [36m<View>[39m
+                    [36m<Text[39m
+                      [33mtestID[39m=[32m"text-input-outlined-label-background"[39m
+                    [36m/>[39m
+                    [36m<Text[39m
+                      [33mstyle[39m=[32m{
+                        {
+                          "opacity": 0,
+                        }
+                      }[39m
+                      [33mtestID[39m=[32m"text-input-outlined-label-active"[39m
+                    [36m>[39m
+                      [0mDescripción (opcional)[0m
+                    [36m</Text>[39m
+                    [36m<Text[39m
+                      [33mstyle[39m=[32m{
+                        {
+                          "opacity": 0,
+                        }
+                      }[39m
+                      [33mtestID[39m=[32m"text-input-outlined-label-inactive"[39m
+                    [36m>[39m
+                      [0mDescripción (opcional)[0m
+                    [36m</Text>[39m
+                  [36m</View>[39m
+                [36m</View>[39m
+              [36m</View>[39m
+              [36m<TextInput[39m
+                [33mtestID[39m=[32m"text-input-outlined"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</View>[39m
+          [36m</View>[39m
+          [36m<View[39m
+            [33mtestID[39m=[32m"button-container-outer-layer"[39m
+          [36m>[39m
+            [36m<View[39m
+              [33mtestID[39m=[32m"button-container"[39m
+            [36m>[39m
+              [36m<View[39m
+                [33maccessibilityRole[39m=[32m"button"[39m
+                [33maccessibilityState[39m=[32m{
+                  {
+                    "disabled": false,
+                  }
+                }[39m
+                [33maccessible[39m=[32m{true}[39m
+                [33mtestID[39m=[32m"button"[39m
+              [36m>[39m
+                [36m<View>[39m
+                  [36m<Text[39m
+                    [33mtestID[39m=[32m"button-text"[39m
+                  [36m>[39m
+                    [0mGuardar[0m
+                  [36m</Text>[39m
+                [36m</View>[39m
+              [36m</View>[39m
+            [36m</View>[39m
+          [36m</View>[39m
+        [36m</View>[39m
+      [36m</RCTScrollView>[39m
+    [36m</View>[39m
+
+      47 |     const { getByText, getByLabelText } = renderWithContext();
+      48 |
+    > 49 |     fireEvent.changeText(getByLabelText('Nombre (Deudor/Acreedor)'), 'Test Name');
+         |                          ^
+      50 |     fireEvent.changeText(getByLabelText('Monto'), '100');
+      51 |     fireEvent.changeText(getByLabelText('Descripción (opcional)'), 'Test desc');
+      52 |
+
+      at Object.getByLabelText (AddEditDebtScreen.test.js:49:26)
+
+PASS ./DebtDetailScreen.test.js
+  ● Console
+
+    console.warn
+      Tried to use the icon 'pencil' in a component from 'react-native-paper', but none of the required icon libraries are installed. To fix this, please install one of the following:
+      - @expo/vector-icons
+      - @react-native-vector-icons/material-design-icons
+      - react-native-vector-icons
+
+      You can also use another method to specify icon: https://callstack.github.io/react-native-paper/docs/guides/icons
+
+      18 |
+      19 |   const renderWithContext = (debtId) => {
+    > 20 |     return render(
+         |                  ^
+      21 |       <DebtContext.Provider value={{ debts: mockDebts, deleteDebt: mockDeleteDebt }}>
+      22 |         <NavigationContainer>
+      23 |           <DebtDetailScreen route={{ params: { debtId } }} navigation={mockNavigation} />
+
+      at warn (node_modules/react-native-paper/src/components/MaterialCommunityIcon.tsx:73:11)
+      at Object.react_stack_bottom_frame (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:15670:20)
+      at renderWithHooks (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:4863:22)
+      at updateFunctionComponent (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:7018:19)
+      at beginWork (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:8499:18)
+      at runWithFiberInDEV (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:2315:13)
+      at performUnitOfWork (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:13224:22)
+      at workLoopSync (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:13068:41)
+      at renderRootSync (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:13049:11)
+      at performWorkOnRoot (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:12181:11)
+      at performWorkOnRootViaSchedulerTask (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:2908:7)
+      at flushActQueue (node_modules/react/cjs/react.development.js:590:34)
+      at process.env.NODE_ENV.exports.act (node_modules/react/cjs/react.development.js:884:10)
+      at actImplementation (node_modules/@testing-library/react-native/src/act.ts:30:25)
+      at renderWithAct (node_modules/@testing-library/react-native/src/render-act.ts:12:11)
+      at renderInternal (node_modules/@testing-library/react-native/src/render.tsx:59:33)
+      at renderInternal (node_modules/@testing-library/react-native/src/render.tsx:29:10)
+      at renderWithContext (DebtDetailScreen.test.js:20:18)
+      at Object.renderWithContext (DebtDetailScreen.test.js:35:27)
+
+    console.warn
+      Tried to use the icon 'delete' in a component from 'react-native-paper', but none of the required icon libraries are installed. To fix this, please install one of the following:
+      - @expo/vector-icons
+      - @react-native-vector-icons/material-design-icons
+      - react-native-vector-icons
+
+      You can also use another method to specify icon: https://callstack.github.io/react-native-paper/docs/guides/icons
+
+      18 |
+      19 |   const renderWithContext = (debtId) => {
+    > 20 |     return render(
+         |                  ^
+      21 |       <DebtContext.Provider value={{ debts: mockDebts, deleteDebt: mockDeleteDebt }}>
+      22 |         <NavigationContainer>
+      23 |           <DebtDetailScreen route={{ params: { debtId } }} navigation={mockNavigation} />
+
+      at warn (node_modules/react-native-paper/src/components/MaterialCommunityIcon.tsx:73:11)
+      at Object.react_stack_bottom_frame (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:15670:20)
+      at renderWithHooks (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:4863:22)
+      at updateFunctionComponent (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:7018:19)
+      at beginWork (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:8499:18)
+      at runWithFiberInDEV (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:2315:13)
+      at performUnitOfWork (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:13224:22)
+      at workLoopSync (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:13068:41)
+      at renderRootSync (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:13049:11)
+      at performWorkOnRoot (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:12181:11)
+      at performWorkOnRootViaSchedulerTask (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:2908:7)
+      at flushActQueue (node_modules/react/cjs/react.development.js:590:34)
+      at process.env.NODE_ENV.exports.act (node_modules/react/cjs/react.development.js:884:10)
+      at actImplementation (node_modules/@testing-library/react-native/src/act.ts:30:25)
+      at renderWithAct (node_modules/@testing-library/react-native/src/render-act.ts:12:11)
+      at renderInternal (node_modules/@testing-library/react-native/src/render.tsx:59:33)
+      at renderInternal (node_modules/@testing-library/react-native/src/render.tsx:29:10)
+      at renderWithContext (DebtDetailScreen.test.js:20:18)
+      at Object.renderWithContext (DebtDetailScreen.test.js:35:27)
+
+    console.warn
+      Tried to use the icon 'pencil' in a component from 'react-native-paper', but none of the required icon libraries are installed. To fix this, please install one of the following:
+      - @expo/vector-icons
+      - @react-native-vector-icons/material-design-icons
+      - react-native-vector-icons
+
+      You can also use another method to specify icon: https://callstack.github.io/react-native-paper/docs/guides/icons
+
+      18 |
+      19 |   const renderWithContext = (debtId) => {
+    > 20 |     return render(
+         |                  ^
+      21 |       <DebtContext.Provider value={{ debts: mockDebts, deleteDebt: mockDeleteDebt }}>
+      22 |         <NavigationContainer>
+      23 |           <DebtDetailScreen route={{ params: { debtId } }} navigation={mockNavigation} />
+
+      at warn (node_modules/react-native-paper/src/components/MaterialCommunityIcon.tsx:73:11)
+      at Object.react_stack_bottom_frame (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:15670:20)
+      at renderWithHooks (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:4863:22)
+      at updateFunctionComponent (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:7018:19)
+      at beginWork (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:8499:18)
+      at runWithFiberInDEV (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:2315:13)
+      at performUnitOfWork (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:13224:22)
+      at workLoopSync (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:13068:41)
+      at renderRootSync (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:13049:11)
+      at performWorkOnRoot (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:12181:11)
+      at performWorkOnRootViaSchedulerTask (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:2908:7)
+      at flushActQueue (node_modules/react/cjs/react.development.js:590:34)
+      at process.env.NODE_ENV.exports.act (node_modules/react/cjs/react.development.js:884:10)
+      at actImplementation (node_modules/@testing-library/react-native/src/act.ts:30:25)
+      at renderWithAct (node_modules/@testing-library/react-native/src/render-act.ts:12:11)
+      at renderInternal (node_modules/@testing-library/react-native/src/render.tsx:59:33)
+      at renderInternal (node_modules/@testing-library/react-native/src/render.tsx:29:10)
+      at renderWithContext (DebtDetailScreen.test.js:20:18)
+      at Object.renderWithContext (DebtDetailScreen.test.js:43:29)
+
+    console.warn
+      Tried to use the icon 'delete' in a component from 'react-native-paper', but none of the required icon libraries are installed. To fix this, please install one of the following:
+      - @expo/vector-icons
+      - @react-native-vector-icons/material-design-icons
+      - react-native-vector-icons
+
+      You can also use another method to specify icon: https://callstack.github.io/react-native-paper/docs/guides/icons
+
+      18 |
+      19 |   const renderWithContext = (debtId) => {
+    > 20 |     return render(
+         |                  ^
+      21 |       <DebtContext.Provider value={{ debts: mockDebts, deleteDebt: mockDeleteDebt }}>
+      22 |         <NavigationContainer>
+      23 |           <DebtDetailScreen route={{ params: { debtId } }} navigation={mockNavigation} />
+
+      at warn (node_modules/react-native-paper/src/components/MaterialCommunityIcon.tsx:73:11)
+      at Object.react_stack_bottom_frame (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:15670:20)
+      at renderWithHooks (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:4863:22)
+      at updateFunctionComponent (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:7018:19)
+      at beginWork (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:8499:18)
+      at runWithFiberInDEV (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:2315:13)
+      at performUnitOfWork (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:13224:22)
+      at workLoopSync (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:13068:41)
+      at renderRootSync (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:13049:11)
+      at performWorkOnRoot (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:12181:11)
+      at performWorkOnRootViaSchedulerTask (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:2908:7)
+      at flushActQueue (node_modules/react/cjs/react.development.js:590:34)
+      at process.env.NODE_ENV.exports.act (node_modules/react/cjs/react.development.js:884:10)
+      at actImplementation (node_modules/@testing-library/react-native/src/act.ts:30:25)
+      at renderWithAct (node_modules/@testing-library/react-native/src/render-act.ts:12:11)
+      at renderInternal (node_modules/@testing-library/react-native/src/render.tsx:59:33)
+      at renderInternal (node_modules/@testing-library/react-native/src/render.tsx:29:10)
+      at renderWithContext (DebtDetailScreen.test.js:20:18)
+      at Object.renderWithContext (DebtDetailScreen.test.js:43:29)
+
+    console.warn
+      Tried to use the icon 'pencil' in a component from 'react-native-paper', but none of the required icon libraries are installed. To fix this, please install one of the following:
+      - @expo/vector-icons
+      - @react-native-vector-icons/material-design-icons
+      - react-native-vector-icons
+
+      You can also use another method to specify icon: https://callstack.github.io/react-native-paper/docs/guides/icons
+
+      18 |
+      19 |   const renderWithContext = (debtId) => {
+    > 20 |     return render(
+         |                  ^
+      21 |       <DebtContext.Provider value={{ debts: mockDebts, deleteDebt: mockDeleteDebt }}>
+      22 |         <NavigationContainer>
+      23 |           <DebtDetailScreen route={{ params: { debtId } }} navigation={mockNavigation} />
+
+      at warn (node_modules/react-native-paper/src/components/MaterialCommunityIcon.tsx:73:11)
+      at Object.react_stack_bottom_frame (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:15670:20)
+      at renderWithHooks (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:4863:22)
+      at updateFunctionComponent (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:7018:19)
+      at beginWork (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:8499:18)
+      at runWithFiberInDEV (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:2315:13)
+      at performUnitOfWork (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:13224:22)
+      at workLoopSync (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:13068:41)
+      at renderRootSync (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:13049:11)
+      at performWorkOnRoot (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:12181:11)
+      at performWorkOnRootViaSchedulerTask (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:2908:7)
+      at flushActQueue (node_modules/react/cjs/react.development.js:590:34)
+      at process.env.NODE_ENV.exports.act (node_modules/react/cjs/react.development.js:884:10)
+      at actImplementation (node_modules/@testing-library/react-native/src/act.ts:30:25)
+      at renderWithAct (node_modules/@testing-library/react-native/src/render-act.ts:12:11)
+      at renderInternal (node_modules/@testing-library/react-native/src/render.tsx:59:33)
+      at renderInternal (node_modules/@testing-library/react-native/src/render.tsx:29:10)
+      at renderWithContext (DebtDetailScreen.test.js:20:18)
+      at Object.renderWithContext (DebtDetailScreen.test.js:50:29)
+
+    console.warn
+      Tried to use the icon 'delete' in a component from 'react-native-paper', but none of the required icon libraries are installed. To fix this, please install one of the following:
+      - @expo/vector-icons
+      - @react-native-vector-icons/material-design-icons
+      - react-native-vector-icons
+
+      You can also use another method to specify icon: https://callstack.github.io/react-native-paper/docs/guides/icons
+
+      18 |
+      19 |   const renderWithContext = (debtId) => {
+    > 20 |     return render(
+         |                  ^
+      21 |       <DebtContext.Provider value={{ debts: mockDebts, deleteDebt: mockDeleteDebt }}>
+      22 |         <NavigationContainer>
+      23 |           <DebtDetailScreen route={{ params: { debtId } }} navigation={mockNavigation} />
+
+      at warn (node_modules/react-native-paper/src/components/MaterialCommunityIcon.tsx:73:11)
+      at Object.react_stack_bottom_frame (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:15670:20)
+      at renderWithHooks (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:4863:22)
+      at updateFunctionComponent (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:7018:19)
+      at beginWork (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:8499:18)
+      at runWithFiberInDEV (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:2315:13)
+      at performUnitOfWork (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:13224:22)
+      at workLoopSync (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:13068:41)
+      at renderRootSync (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:13049:11)
+      at performWorkOnRoot (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:12181:11)
+      at performWorkOnRootViaSchedulerTask (node_modules/react-test-renderer/cjs/react-test-renderer.development.js:2908:7)
+      at flushActQueue (node_modules/react/cjs/react.development.js:590:34)
+      at process.env.NODE_ENV.exports.act (node_modules/react/cjs/react.development.js:884:10)
+      at actImplementation (node_modules/@testing-library/react-native/src/act.ts:30:25)
+      at renderWithAct (node_modules/@testing-library/react-native/src/render-act.ts:12:11)
+      at renderInternal (node_modules/@testing-library/react-native/src/render.tsx:59:33)
+      at renderInternal (node_modules/@testing-library/react-native/src/render.tsx:29:10)
+      at renderWithContext (DebtDetailScreen.test.js:20:18)
+      at Object.renderWithContext (DebtDetailScreen.test.js:50:29)
+
+
+Test Suites: 1 failed, 3 passed, 4 total
+Tests:       2 failed, 9 passed, 11 total
+Snapshots:   0 total
+Time:        2.321 s, estimated 17 s
+Ran all test suites.
