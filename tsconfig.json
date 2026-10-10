@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": false,
+    "jsx": "react-native",
+    "noEmit": true,
+    "esModuleInterop": true,
+    "strict": false,
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*", "App.tsx"]
+}
