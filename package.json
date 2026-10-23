@@ -1,0 +1,45 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "@expo/metro-runtime": "^58.0.15",
+    "@expo/vector-icons": "^15.1.1",
+    "@react-native-async-storage/async-storage": "^3.1.1",
+    "@react-navigation/native": "^7.5.1",
+    "@react-navigation/stack": "^7.12.1",
+    "expo": "~58.0.17",
+    "expo-status-bar": "~58.0.4",
+    "react": "19.3.0",
+    "react-dom": "^19.0.0",
+    "react-native": "0.88.0",
+    "react-native-gesture-handler": "^3.4.0",
+    "react-native-get-random-values": "^2.0.0",
+    "react-native-paper": "^5.15.3",
+    "react-native-safe-area-context": "^5.10.1",
+    "react-native-screens": "^4.30.0",
+    "react-native-web": "^0.21.4",
+    "uuid": "^14.0.3"
+  },
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "test": "jest"
+  },
+  "private": true,
+  "devDependencies": {
+    "@babel/core": "^7.29.7",
+    "@babel/preset-env": "^7.29.7",
+    "@babel/preset-typescript": "^7.29.7",
+    "@react-native/jest-preset": "^0.88.0",
+    "@testing-library/react-native": "^12.7.2",
+    "@types/jest": "^30.0.0",
+    "babel-jest": "^29.7.0",
+    "babel-preset-expo": "^58.0.19",
+    "jest": "^30.5.2",
+    "jest-expo": "^58.0.12",
+    "react-test-renderer": "^19.0.0"
+  }
+}
